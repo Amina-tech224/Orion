@@ -9,47 +9,116 @@
     <link rel="stylesheet" href ="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
+    <h1 class="text-center mt-4">WHAT CELESTIAL FORCE ARE YOU?</h1>
     
     <!-- Start quiz element -->
+  <div id="celestial-questions" class="row g-2">
+  
     <div class="container d-flex justify-content-center" id="question-1">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+        <h4 class="mb-3">You discover a mysterious doorway in the woods. What do you do?</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Step through and see where your imagination takes you.</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Examine it carefully, then lead the way inside.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="question-2">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Which view speaks to you the most?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Northern lights across the night sky.</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">A sky full of stars forming a constellation</button>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="container d-flex justify-content-center" id="question-3">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">When your friends need help your most likely to?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Listen and give advice.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Take charge and help solve the problem</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="question-4">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Your ideal weekend involves</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Creating art, writing, reading or trying new ideas.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Going on an adventure, competing or trying something new</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="question-5">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">If you had a magical power what would it be?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Creating beautiful illusions and light.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Navigating any path and getting through any obstacle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="question-6">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Which word describes you</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Imaginative.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Fearless</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="question-7">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">During a group project you:?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Give vreative ideas and keep everyone inspired.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Organize the plan and keep the team moving</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-4">
+      <button id="show-result" class="btn btn-success">
+        Reveal My Celestial Force
+      </button>
+    </div>
+    <h4 id="result" class="text-center"></h4>
+  </div>
+  
     
     
     <!-- End quiz element -->
 
     <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
-      </div>
-    </div>
     
     <!-- Connect to your script file here -->
      <script src = "./js/script.js"></script>
